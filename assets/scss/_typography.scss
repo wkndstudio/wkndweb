@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+body {
+    font-family: $font-family-0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    font-size: 16px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.8;
+    margin: 0;
+    margin-bottom: 1em;
+    font-family: 'Poppins';
+    letter-spacing: 0.8px;
+    color: $color-body-copy;
+    max-width: 90%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: $color-heading;
+    font-weight: normal;
+}
+
+li {
+    display: inline;
+    min-width: 100px;
+    margin-left: 3rem;
+}
+
+h1 {
+    font-weight: normal;
+    line-height: 1.22;
+    font-size: 3em;
+    margin: 0;
+    margin-bottom: 1.25rem;
+    color: $color-heading;
+}
+
+h2 {
+    font-weight: normal;
+    line-height: 1.22;
+    font-size: 2.25em;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-weight: normal;
+    line-height: 1.22;
+    font-size: 1.875em;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+h4 {
+    font-weight: normal;
+    line-height: 1.225;
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+h5 {
+    font-weight: normal;
+    line-height: 1.22;
+    font-size: 0.875em;
+    margin: 0;
+    margin-bottom: 1em;
+    color: $color-title;
+}

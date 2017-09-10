@@ -1,0 +1,23 @@
+button {
+	font-size: 14px;
+	background: #5200FF;
+	border-radius: 5px;
+	padding: 1em 2em;
+	margin: 1em;
+	margin-left: 0em;
+	color: $color-light-0;
+	text-transform: uppercase;
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.launch-project {
+	position: absolute;
+	border-radius: 50%;
+	z-index: 5;
+	height: 8em;
+	width: 8em;
+	border: 10px solid $color-light-0;
+	bottom: 2em;
+}

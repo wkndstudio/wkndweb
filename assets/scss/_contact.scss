@@ -1,0 +1,54 @@
+.contact {
+	display: flex;
+	flex-direction: column;
+	min-height: 530px;
+	&__content {
+		display: flex;
+		flex-direction: row;
+	}
+	&__left{
+		display: flex;
+		flex-direction: column;
+	}
+	&__right{
+		display: flex;
+		flex-direction: column;
+	}
+	@media #{$desktop}{
+	flex-direction: row;
+	max-height: 530px !important;
+		&__content {
+			display: flex;
+			flex-direction: row;
+		}
+		&__left{
+			display: flex;
+			flex-direction: column;
+			width: 55%;
+		}
+		&__right{
+			display: flex;
+			flex-direction: column;
+			width: 35%;
+			&__details {
+				display: flex;
+				flex-direction: row;
+			}
+		}	
+	}
+}
+
+textarea,
+input {
+	border: none;
+	outline: none;
+	background: rgba(255, 255, 255, 0.2);
+	padding: 1em;
+	margin: 1em;
+	margin-left: 0em;
+	width: 100%;
+	&:nth-child(2){
+		margin-right: 0em;
+	}
+}
+

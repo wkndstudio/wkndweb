@@ -1,0 +1,54 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	&__content {
+		display: flex;
+		flex-direction: row;
+	}
+	&__left{
+		display: flex;
+		flex-direction: column;
+	}
+	&__right{
+		display: flex;
+		flex-direction: column;
+	}
+	@media #{$desktop}{
+	flex-direction: column;
+	padding-top: 6.875em;
+	padding-bottom: 6.25em;
+		&__content {
+			display: flex;
+			flex-direction: column;
+		}
+		&__top{
+			display: flex;
+			flex-direction: column;
+			width: 55%;
+		}
+		&__bottom{
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			flex: 1;
+			&__details {
+				display: flex;
+				flex-direction: row;
+			}
+			&__col {
+				display: flex;
+				flex-direction: column;
+				flex:1;
+				ul{
+					display: block;
+					padding: 0;
+					li {
+						display: block;
+						margin-left: 0rem;
+						margin-bottom: 0.4em;
+					}
+				}
+			}
+		}	
+	}
+}

@@ -1,0 +1,57 @@
+.testimonials {
+	display: flex;
+	flex-direction: column;
+	&__content {
+
+	}
+	&__top{
+
+	}
+	&__bottom{
+
+	}
+	@media #{$desktop}{
+		display: flex;
+		flex-direction: column;
+		&__content {
+			display: flex;
+			flex-direction: column;
+		}
+		&__top{
+			
+		}
+		&__bottom{
+			display: flex;
+			flex-direction: row;
+			flex: 1;
+			padding-top: 4em;
+			max-height: 24.5em;
+			overflow:hidden;
+			&__img {
+				overflow: hidden;
+				flex: 1;
+				img {
+					object-fit: 200px;
+					background-size: 500px;
+				}
+			}
+			&__testimonial {
+				flex:1;
+				background: $color-purple-dark;
+				&__content {
+					padding-top: 5em;
+					padding-left: 4em;
+				}
+				p {
+					font-size: 0.875em;
+					margin-bottom: 2em;
+				}
+			}
+
+		}		
+	}
+}
+
+.desc {
+	max-width: 75%;
+}

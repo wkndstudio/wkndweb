@@ -1,0 +1,28 @@
+<svg width="1440" height="445" viewBox="0 0 1440 445" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>psbg</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-25724 -14275)">
+<g id="psbg">
+<mask id="mask0_alpha" mask-type="alpha">
+<g id="Rectangle 35">
+<use xlink:href="#path0_fill" transform="translate(25724 14242)" fill="#FAFAFA"/>
+</g>
+</mask>
+<g id="Ellipse 6" mask="url(#mask0_alpha)">
+<use xlink:href="#path1_fill" transform="translate(25692 14275)" fill="#004EFF"/>
+</g>
+<g id="Ellipse 6" mask="url(#mask0_alpha)">
+<use xlink:href="#path2_fill" transform="translate(26858 14653)" fill="#82DB35"/>
+</g>
+<g id="Ellipse 6" mask="url(#mask0_alpha)">
+<use xlink:href="#path3_fill" transform="translate(26998 14275)" fill="#FFE400"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 1440 0L 1440 478L 0 478L 0 0Z"/>
+<path id="path1_fill" d="M 124 62C 124 96.2417 96.2417 124 62 124C 27.7583 124 0 96.2417 0 62C 0 27.7583 27.7583 0 62 0C 96.2417 0 124 27.7583 124 62Z"/>
+<path id="path2_fill" d="M 158 79C 158 122.63 122.63 158 79 158C 35.3695 158 0 122.63 0 79C 0 35.3695 35.3695 0 79 0C 122.63 0 158 35.3695 158 79Z"/>
+<path id="path3_fill" d="M 263 131.5C 263 204.125 204.125 263 131.5 263C 58.8746 263 0 204.125 0 131.5C 0 58.8746 58.8746 0 131.5 0C 204.125 0 263 58.8746 263 131.5Z"/>
+</defs>
+</svg>
