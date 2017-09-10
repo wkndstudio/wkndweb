@@ -6,9 +6,15 @@
 
 section {
 	padding-top: 8.33em;
-	min-height: 800px;
+	min-height: 600px;
+	@media #{$desktop} {
+		min-height: 800px;
+	}
 }
 
 .description{
-	max-width:45%;
+	max-width:85%;
+	@media #{$desktop} {
+		max-width: 45%;
+	}
 }

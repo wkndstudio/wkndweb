@@ -9,9 +9,10 @@
 <body>
 	<div class="main">
 			<section class="hero">
+				<div class="hero-bg" style="background: url(assets/img/hero.png);"></div>
 				<div class="hero__content container">
 					<div class="hero__left">
-						<h5 class="title clr-purple">WEB/MOBILE/APPLICATIONS</h5>
+						<h5 class="title clr-blue">WEB/MOBILE/APPLICATIONS</h5>
 						<h1>We’re a design &amp; development agency.</h1>
 						<p>We help companies to build great experiences on web and mobile. We offer design, development &amp; marketing.</p>
 						<div class="hero__left__links">
@@ -21,7 +22,7 @@
 					</div>
 					<div class="hero__right">
 						<div class="featured">
-							<button class="launch-project"><i>play</i></button>
+							<button class="launch-project"><div class="arrow-right"></div></button>
 							<div class="project-hero img-main">
 								<img src="assets/img/pr3.png" alt="">
 							</div>
@@ -61,14 +62,14 @@
 			<section class="projects gr-purple">
 				<div class="projects__content container">
 					<div class="projects__top">
-						<h5 class="title clr-light">02</h5><hr><h5 class="title clr-light">PROJECTS</h5>
+						<h5 class="title clr-light">02</h5><hr class="hr-light"><h5 class="title clr-light">PROJECTS</h5>
 						<h2 class="clr-light">Here are some of our work.</h2>
 						<p class="description clr-light">Take a look at our work. We’ve worked with some great companies to help them build delightful interfaces.</p>					
 					</div>
 					<div class="projects__bottom">
 						<div class="project service__one">
 							<div class="featured">
-								<button class="launch-project"><i>play</i></button>
+								<button class="launch-project launch-project--light"><div class="arrow-right arrow-right--color"></div></button>
 								<div class="project-hero img-circle">
 									<img src="assets/img/pr1.png" alt="">
 								</div>
@@ -76,7 +77,7 @@
 						</div>
 						<div class="project service__two">
 							<div class="featured">
-								<button class="launch-project"><i>play</i></button>
+								<button class="launch-project launch-project--light"><div class="arrow-right arrow-right--color"></div></button>
 								<div class="project-hero img-circle">
 									<img src="assets/img/pr2.jpg" alt="">
 								</div>
@@ -84,7 +85,7 @@
 						</div>		
 						<div class="project service__three">
 							<div class="featured">
-								<button class="launch-project"><i>play</i></button>
+								<button class="launch-project launch-project--light"><div class="arrow-right arrow-right--color"></div></button>
 								<div class="project-hero img-circle">
 									<img src="assets/img/pr3.png" alt="">
 								</div>
@@ -103,35 +104,42 @@
 					</div>
 					<div class="testimonials__bottom">
 						<div class="testimonials__bottom__img">
-							<img src="assets/img/test.jpg" alt="">
+							<img src="assets/img/client1.png" alt="">
 						</div>
 						<div class="testimonials__bottom__testimonial service__one">
+							<div class="quote-mark"><img src="assets/img/quote.svg" alt=""></div>
 							<div class="testimonials__bottom__testimonial__content">
-								<h4 class="clr-light">Jean Claude Biguine</h4>
-								<p class="desc clr-light">This is a testimonial and we are great at writing those. So if you have any products development requirement, please let us know.</p>
-								<h5 class="clr-light">Founder, Twilio</h4>								
+								<h4 class="clr-light">Michael Kott</h4>
+								<p class="desc clr-light">One of the best in terms of quality, communication and responsiveness. Will certainly work with them again.</p>
+								<h5 class="clr-light">Co-Founder, Burnalong</h4>								
 							</div>
 						</div>						
 					</div>
 				</div>
 			</section>
 
-			<section class="contact clr-bg-blue" style="height: 530px;">
+			<section class="contact clr-bg-blue">
+				<div class="send-mark"><img src="assets/img/quote.svg" alt=""></div>
 				<div class="contact__content container">
 					<div class="contact__left">
-						<h2 class="clr-light">Have a project in mind?</h2>
-						<p class="description clr-light">If you have a query you can write to us - 007@wknd.design or if you have an urgent query let us know - 911@wknd.design.</p>					
-						<h5 class="description clr-light">DRIBBBLE : WWW.DRIBBBLE.COM/WKND <br/> MAIL : 911@WKND.DESIGN</h5>
+						<div class="contact__left__top">
+							<h2 class="clr-light">Have a project in mind?</h2>
+							<p class="description clr-light">If you have a query you can write to us - 007@wknd.design or if you have an urgent query let us know - 911@wknd.design.</p>							
+						</div>	
+						<div class="contact__left__bottom">				
+							<p class="description clr-light">DRIBBBLE : WWW.DRIBBBLE.COM/WKND</p>
+							<p class="description clr-light">MAIL : 911@WKND.DESIGN</p>
+						</div>
 					</div>
 					<div class="contact__right">
 						<h2 class="clr-light">Contact Us</h2>
 						<form action="">
 							<div class="contact__right__details">
-								<input type="text">
-								<input type="text">								
+								<input type="text" placeholder="Full Name">
+								<input type="text" placeholder="Email Address">								
 							</div>
-							<textarea name="" id="" cols="30" rows="5"></textarea>
-							<button></button>
+							<textarea name="" id="" cols="30" rows="5" placeholder="Job Description"></textarea>
+							<button class="contact_btn">Send us a message</button>
 						</form>					
 					</div>
 				</div>
@@ -144,7 +152,7 @@
 					</div>
 					<div class="footer__bottom">
 						<div class="footer__bottom__col">
-							<h5>Stay in touch</h5>
+							<h5 class="clr-grey">Stay in touch</h5>
 							<ul>
 								<li><a href="">Twitter</a></li>
 								<li><a href="">Facebbok</a></li>
@@ -153,22 +161,22 @@
 							</ul>
 						</div>
 						<div class="footer__bottom__col">
-							<h5>Email Us</h5>
+							<h5 class="clr-grey">Email Us</h5>
 							<ul>
 								<li><a href="">911@wknd.design</a></li>
 								<li><a href="">work@wknd.design</a></li>
 							</ul>
 						</div>
 						<div class="footer__bottom__col">
-							<h5>Follow</h5>
+							<h5 class="clr-grey">Follow</h5>
 							<ul>
 								<li>Facebook</li>
 								<li>Twitter</li>
 							</ul>
 						</div>
 						<div class="footer__bottom__col">
-							<h5>Copyright</h5>
-							<h6>(c) WKND Digital Pvt. Ltd.</h6>
+							<h5 class="clr-grey">Copyright</h5>
+							<h6>© WKND Digital Pvt. Ltd.</h6>
 						</div>						
 					</div>
 				</div>

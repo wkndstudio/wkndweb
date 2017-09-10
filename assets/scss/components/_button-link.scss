@@ -12,12 +12,76 @@ button {
 	}
 }
 
+.contact_btn {
+	font-size: 14px;
+	background: 0;
+	border: 1px solid $color-light-0;
+	border-radius: 0;
+	padding: 1em 2em;
+	margin: 0.5em;
+	margin-left: 0em;
+	width: 100%;
+	color: $color-light-0;
+	text-transform: uppercase;
+	&:hover{
+		cursor: pointer;
+		background: $color-light-0;
+		color: $color-dark-blue;
+	}
+}
+
 .launch-project {
 	position: absolute;
 	border-radius: 50%;
 	z-index: 5;
-	height: 8em;
-	width: 8em;
-	border: 10px solid $color-light-0;
+	height: 5em;
+	width: 5em;
+	border: 6px solid $color-light-0;
 	bottom: 2em;
+	@media #{$desktop} {
+		height: 8em;
+		width: 8em;
+		border: 10px solid $color-light-0;
+		bottom: 2em;
+	}
+}
+
+.launch-project--light {
+	position: absolute;
+	border-radius: 50%;
+	z-index: 5;
+	background: $color-light-0;
+	height: 5em;
+	width: 5em;
+	border: 6px solid $color-purple-dark;
+	bottom: 2em;
+	@media #{$desktop} {
+		height: 5em;
+		width: 5em;
+		border: 6px solid $color-purple-dark;
+		bottom: 2em;
+	}
+}
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 0.8em solid transparent;
+	border-bottom: 0.8em solid transparent;
+	border-left: 1em solid $color-light-0;
+	margin: 0 auto;
+	margin-left: -0.25em;
+  @media #{$desktop} {
+	border-top: 1em solid transparent;
+	border-bottom: 1em solid transparent;
+	border-left: 1.25em solid $color-light-0;
+	margin: 0 auto;
+  }
+}
+
+.arrow-right--color {
+	border-top: 0.8em solid transparent;
+	border-bottom: 0.8em solid transparent;
+	border-left: 1em solid $color-purple-dark;
+	margin-left: -0.25em;
 }

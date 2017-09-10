@@ -1,16 +1,30 @@
 .services{
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 6.25em;
 	&__top{
 
 	}
 	&__bottom{
 		padding-top: 4rem;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		p {
 			width: 100%;
 		}
+	}
+	@media #{$desktop}{
+		&__top{
+
+		}
+		&__bottom{
+			padding-top: 4rem;
+			display: flex;
+			flex-direction: row;
+			p {
+				width: 100%;
+			}
+		}		
 	}
 }
 

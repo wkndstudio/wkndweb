@@ -1,22 +1,45 @@
 .testimonials {
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 6.25em;
 	&__content {
-
+		display: flex;
+		flex-direction: column;
 	}
 	&__top{
 
 	}
 	&__bottom{
-
-	}
-	@media #{$desktop}{
 		display: flex;
 		flex-direction: column;
-		&__content {
-			display: flex;
-			flex-direction: column;
+		padding-top: 4em;
+		max-height: 38.5em;
+		overflow:hidden;
+		&__img {
+			overflow: hidden;
+			flex: 1;
+			img {
+				    width: 102%; /* or any custom size */
+				    object-fit: contain;
+			}
 		}
+		&__testimonial {
+			flex:1;
+			background: $color-purple-dark;
+			position: relative;
+			&__content {
+				padding-top: 4em;
+				padding-left: 4em;
+				padding-bottom: 2em;
+			}
+			p {
+				font-size: 0.875em;
+				margin-bottom: 2em;
+			}
+		}
+
+	}	
+	@media #{$desktop}{
 		&__top{
 			
 		}
@@ -31,8 +54,8 @@
 				overflow: hidden;
 				flex: 1;
 				img {
-					object-fit: 200px;
-					background-size: 500px;
+					    width: 102%; /* or any custom size */
+					    object-fit: contain;
 				}
 			}
 			&__testimonial {
@@ -54,4 +77,21 @@
 
 .desc {
 	max-width: 75%;
+}
+
+
+.quote-mark {
+	position: absolute;
+	z-index: 5;
+	height: 1em;
+	top: -2em;
+	left: 3em;
+	img {
+		height: 50px;
+	}
+	@media #{$desktop} {
+		img {
+			height: 100px;
+		}
+	}
 }

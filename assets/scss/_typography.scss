@@ -76,9 +76,17 @@ h4 {
 
 h5 {
     font-weight: normal;
+    display: inline-block;
     line-height: 1.22;
     font-size: 0.875em;
     margin: 0;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
     color: $color-title;
+}
+hr {
+    display: inline-block;
+    align: center;
+    vertical-align: middle;
+    color: $color-title;
+    background: $color-title;
 }
