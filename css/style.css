@@ -846,9 +846,11 @@ button {
   width: 20%;
   overflow: hidden; }
   .hero-bg:before {
+    content: "";
     position: absolute;
     background: linear-gradient(56.63deg, #5200FF 49.28%, #BC90FF 145.44%);
-    z-index: 5; }
+    z-index: 5;
+    opacity: 0.2; }
   @media (min-width: 1024px) {
     .hero-bg {
       display: block; }
@@ -1197,16 +1199,37 @@ input::placeholder {
 
 .footer {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-top: 6.875em; }
   .footer__content {
     display: flex;
-    flex-direction: row; }
+    flex-direction: column; }
   .footer__left {
     display: flex;
     flex-direction: column; }
-  .footer__right {
+  .footer__bottom {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    flex: 1; }
+    .footer__bottom__details {
+      display: flex;
+      flex-direction: row; }
+    .footer__bottom__col {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      width: 50%; }
+      .footer__bottom__col ul {
+        display: block;
+        padding: 0; }
+        .footer__bottom__col ul li {
+          display: block;
+          margin-left: 0rem;
+          margin-bottom: 0.4em; }
+      .footer__bottom__col h5 {
+        margin-bottom: 1em; }
   @media (min-width: 1024px) {
     .footer {
       flex-direction: column;
