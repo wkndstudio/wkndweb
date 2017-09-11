@@ -3,20 +3,20 @@
 	position: relative;
 	flex-direction: column;
 	min-height: 700px;
-	&__content{
+	&__content {
 	display: flex;
 	flex-direction: column;
-	padding-top: 6.25em;
+	padding-top: 16.25em;
 	padding-bottom: 6.25em;
 	}
-	&__left{
+	&__left {
 		display: flex;
 		flex-direction: column;
 		h5 {
 			margin-bottom: 2.75rem ; 
 		}
 	}
-	&__right{
+	&__right {
 		display: flex;
 		flex-direction: column;
 		margin-top: 3em;
@@ -25,18 +25,19 @@
 	@media #{$desktop} {
     flex-direction: row;
 	align-items: flex-end;
-		&__content{
+	height: 100vh;
+		&__content {
 		display: flex;
 		flex-direction: row;
 
 		align-items: center;
 		}
-		&__left{
+		&__left {
 			display: flex;
 			flex-direction: column;
 			width: 60%;
 		}
-		&__right{
+		&__right {
 			display: flex;
 			flex-direction: column;
 			width: 40%;
@@ -50,7 +51,7 @@
 	z-index: -1;
 	right: 0;
 	height: 100vh;
-	width: 20%;
+	width: 15%;
 	overflow: hidden;
 	&:before {
 		content:"";
@@ -68,3 +69,4 @@
 		}
 	}
 }
+

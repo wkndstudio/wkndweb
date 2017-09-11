@@ -176,3 +176,41 @@ Parallax
     transform: translateY(0);
   }
 }
+
+// Styling
+
+// .alpha {
+//   transform-origin: center center;
+//   transform: translate3d(10%,10%,0)scale(1.2);
+//   opacity: 0;
+//   letter-spacing: 0.2em;
+//   transition: opacity 4s ease-out, transform 4s ease-out, letter-spacing 4s ease-out, -webkit-filter 3s ease-out, filter 3s ease-out;
+//   filter: blur(20px);
+//   -webkit-filter: blur(20px);
+//   &.in {
+//     transform: translate3d(0%,0%,0)scale(1);
+//     opacity: 1;
+//     letter-spacing: 0em;
+//     filter: blur(0px);
+//     -webkit-filter: blur(0px);
+//   }
+// }
+
+// .mars {
+//   width: 75%;
+//   display: block;
+//   position: absolute;
+//   z-index: -1;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, 0);
+//   animation: mars 360s infinite linear;
+// }
+// @keyframes mars {
+//   0% {
+//     transform: translate(-50%, 0)rotate(0deg);
+//   }
+//   100% {
+//     transform: translate(-50%, 0)rotate(360deg);
+//   }
+// }

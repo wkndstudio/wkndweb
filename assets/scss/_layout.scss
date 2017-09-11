@@ -1,4 +1,6 @@
-
+.main {
+	position: relative;
+}
 .container {
     margin: 0 auto;
     width: 83.33%;
@@ -10,6 +12,10 @@ section {
 	@media #{$desktop} {
 		min-height: 800px;
 	}
+}
+
+section.hero {
+	padding-top: 0em !important;
 }
 
 .description{

@@ -13,6 +13,16 @@ button {
 	}
 }
 
+.cta-link {
+    background: #00D6FF;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    &:hover {
+        background: $color-purple-dark;
+        color: $color-light-0;
+    }
+}
+
 .contact_btn {
 	font-size: 14px;
 	background: 0;

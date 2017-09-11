@@ -1,5 +1,6 @@
 @import 'normalize';
 @import 'variables';
+@import 'loader';
 @import 'mixins';
 @import 'typography';
 @import 'header';
@@ -14,6 +15,8 @@
 @import 'services';
 @import 'testimonials';
 @import 'contact';
+@import 'owl';
+@import 'animation/animate';
 @import 'footer';
 
 html,

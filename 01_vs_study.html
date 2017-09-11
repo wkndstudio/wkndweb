@@ -3,48 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<title>Weekend Digital Design Studio</title>
-<!-- 	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
+	<title>Vinyl Shop Case Study</title>
 	<link rel="stylesheet" href="css/style.css">
-    <!-- load and instantiate ScrollReveal first -->
-    <script src="assets/js/scrollreveal.min.js"></script> 
-    <script>
-      window.sr = ScrollReveal();
- 
-      // Add class to <html> if ScrollReveal is supported 
-      // Note: this method is deprecated, and only works in version 3 
-      if (sr.isSupported()) {
-        document.documentElement.classList.add('sr');
-      }
- 
-    </script> 
- 
-    <style>
- 
-      /* Ensure elements load hidden before ScrollReveal runs */
-      .sr .fooReveal { visibility: hidden; }
- 
-    </style> 
 </head>
 <body>
-
-<!-- 	<div class="loader">
-		<div class="sentance">
-		  <div class="sentance__half left">
-		    <span class="inner">
-		      Loading Your
-		    </span>
-		  </div>
-		  <div class="sentance__half right">
-		    <span class="inner">
-		      Experience
-		    </span>
-		    <span class="dot"></span>
-		  </div>
-		</div>
-	</div> -->
-	<div class="page" id="nextpage"></div>
 	<div class="main">
 	
 			<header class="header">
@@ -65,7 +27,7 @@
 			</header>
 
 
-			<section class="hero">
+			<section class="hero hero-study">
 				<div class="hero-bg" style="background: url(assets/img/hero-bg.png);"></div>
 				<div class="hero__content container">
 					<div class="hero__left">
@@ -79,7 +41,7 @@
 					</div>
 					<div class="hero__right">
 						<div class="featured">
-							<button class="launch-project" id="featured" type="button"><div class="arrow-right"></div></button>
+							<button class="launch-project"><div class="arrow-right"></div></button>
 							<div class="project-hero img-main">
 								<img src="assets/img/pr3.png" alt="">
 							</div>
@@ -244,38 +206,10 @@
 	
 	<script src="assets/js/jquery-2.1.1.js"></script>
 	<script src="assets/js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
-	<!-- <script src="assets/js/owl.carousel.min.js"></script> --> <!-- Resource jQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TimelineLite.min.js"></script>
 	<script src="assets/js/scripts.js"></script> <!-- Resource jQuery -->
 	<script src="https://unpkg.com/feather-icons"></script>
-
     <script>
-		$(document).ready(function(){
-			// $(".owl-carousel").owlCarousel({
-			//     items: 1,
-			//     singleItem: true,
-			//     itemsScaleUp : true,
-			//     slideSpeed: 500,
-			//     autoPlay: 5000,
-			//     autoplayHoverPause: true,
-			// 	loop:true,
-			// 	margin:0,
-			// 	navSpeed:500,
-			// 	nav:true,
-			// 	items:1
-			// });
-			feather.replace();
-			setTimeout(function() {
-			$('.alpha').addClass('in');
-			},1000)
-
-			$('#featured').on('click', function()
-			{
-			    $('#nextpage').load('localhost:3000/typography.html')
-			});
-		});
-
+      feather.replace()
     </script>
 </body>
 </html>
