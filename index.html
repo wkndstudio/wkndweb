@@ -11,10 +11,14 @@
     <script src="assets/js/scrollreveal.min.js"></script> 
     <script>
       window.sr = ScrollReveal();
+      window.ds = ScrollReveal();
  
       // Add class to <html> if ScrollReveal is supported 
       // Note: this method is deprecated, and only works in version 3 
       if (sr.isSupported()) {
+        document.documentElement.classList.add('sr');
+      }
+      if (ds.isSupported()) {
         document.documentElement.classList.add('sr');
       }
  
@@ -202,7 +206,7 @@
 				</div>
 			</section>
 
-			<footer class="footer">
+			<footer class="footer" id="footer">
 				<div class="footer__content container">
 					<div class="footer__top">
 						<h1 class="clr-grey">Wknd.</h1>

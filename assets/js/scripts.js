@@ -24,10 +24,42 @@
 
 /// Scroll Reveal
 window.sr = ScrollReveal();
+window.ds = ScrollReveal();
 // sr.reveal('.container', { duration: 2000, scale: 1, distance: '30px' });
-sr.reveal('div', { duration: 2000, scale: 1, distance: '30px' });
+
 sr.reveal('header', { duration: 1500, scale: 1, distance: '30px' });
 sr.reveal('.hero', { duration: 3000, scale: 1, distance: '50px' });
+
+// if (scrollTop==800) {
+// 	ds.reveal('div', { duration: 2000, scale: 1, distance: '30px' });
+// 	divreveal();
+// }
+// as a DOM node...
+var footer = $('footer');
+var sections = $('.section');
+// sr.reveal('div', { container: footer });
+// sr.reveal('div', { container: sections });
+
+// $( 'body' ).scroll(function() {
+//   sr.reveal('div', { duration: 2000, scale: 1, distance: '30px' });
+// });
+function divreveal() {
+	ds.reveal('div', { container: sections, duration: 2000, scale: 1, distance: '30px' });
+	ds.reveal('div', { container: footer, duration: 2000, scale: 1, distance: '30px' });
+	// ds.reveal('div', { duration: 2000, scale: 1, distance: '30px' });
+}
+
+$(window).on('scroll', function() {
+    scrollPosition = $(this).scrollTop();
+    if (scrollPosition >= 300) {
+        // If the function is only supposed to fire once
+        divreveal();
+
+        // Other function stuff here...
+    }
+});
+
+
 
 
 // interval and custom config passed to reveal 
