@@ -15,6 +15,12 @@
 		h5 {
 			margin-bottom: 2.75rem ; 
 		}
+		&__links {
+			margin-top: 2em;
+			a.nav-link {
+				margin-right: 2em;
+			}
+		}
 	}
 	&__right {
 		display: flex;
@@ -56,17 +62,16 @@
 	&:before {
 		content:"";
 		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
 		background: $gr-purple;
 		z-index: 5;
 		opacity:0.2;
 	}
 	@media #{$desktop} {
 		display: block;
-		&:before {
-			position: absolute;
-			background: $gr-purple;
-			z-index: 5;
-		}
 	}
 }
 

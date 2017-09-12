@@ -9,6 +9,7 @@
 section {
 	padding-top: 8.33em;
 	min-height: 600px;
+	outline: none;
 	@media #{$desktop} {
 		min-height: 800px;
 	}

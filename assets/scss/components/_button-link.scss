@@ -2,7 +2,7 @@ button {
 	font-family: $font-family-0;
 	font-size: 14px;
 	background: #5200FF;
-	border-radius: 5px;
+	border-radius: 0;
 	padding: 1em 2em;
 	margin: 1em;
 	margin-left: 0em;
@@ -10,6 +10,24 @@ button {
 	text-transform: uppercase;
 	&:hover{
 		cursor: pointer;
+		@include shadow();
+	}
+}
+
+a.button {
+	font-family: $font-family-0;
+	font-size: 14px;
+	background: #5200FF;
+	border-radius: 0;
+	padding: 1em 2em !important;
+	margin: 1em !important;
+	margin-left: 0em;
+	line-height: 1.15;
+	color: $color-light-0;
+	text-transform: uppercase;
+	&:hover{
+		cursor: pointer;
+		@include shadow();
 	}
 }
 
