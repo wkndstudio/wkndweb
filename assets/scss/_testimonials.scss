@@ -1,17 +1,5 @@
 .testimonials {
-	display: flex;
-	flex-direction: column;
-	padding-bottom: 6.25em;
-	&__content {
-		display: flex;
-		flex-direction: column;
-	}
-	&__top{
-
-	}
 	&__bottom{
-		display: flex;
-		flex-direction: column;
 		padding-top: 4em;
 		max-height: 38.5em;
 		overflow:hidden;
@@ -40,14 +28,8 @@
 
 	}	
 	@media #{$desktop}{
-		&__top{
-			
-		}
 		&__bottom{
-			display: flex;
-			flex-direction: row;
 			flex: 1;
-			padding-top: 4em;
 			max-height: 24.5em;
 			overflow:hidden;
 			&__img {

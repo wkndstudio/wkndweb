@@ -58,7 +58,7 @@
 							<li><a class="nav-link" href="#services">Services</a></li>
 							<li><a class="nav-link" href="#work">Work</a></li>
 							<li><a class="nav-link" href="https://dribbble.com/wknd">Dribbble</a></li>
-							<li><button class="nav-link cta-link" href="#contact">Start A Project</button></li>
+							<li><button class="nav-link cta-link" onclick="window.location.href='/page2'">Start A Project</button></li>
 						</ul>
 					</div>
 				</div>
@@ -79,7 +79,7 @@
 					</div>
 					<div class="hero__right">
 						<div class="featured">
-							<button class="launch-project" id="featured" type="button"><div class="arrow-right"></div></button>
+							<button class="launch-project" id="featured" type="button" onclick="window.location.href='/01_vs_study.html'"><div class="arrow-right"></div></button>
 							<div class="project-hero img-main">
 								<img src="assets/img/pr3.png" alt="">
 							</div>
@@ -89,14 +89,14 @@
 				</div>
 			</section>
 
-			<section class="services" id="services">
-				<div class="services__content container">
-				<div class="services__top">
+			<section class="services section" id="services">
+				<div class="section__content container">
+				<div class="section__top">
 						<h5 class="title">01</h5><hr><h5 class="title">SERVICES</h5>
 						<h2>We can help you grow.</h2>
 						<p class="description">We help companies to build great experiences on web and mobile. We offer design, development &amp; marketing.</p>					
 					</div>
-					<div class="services__bottom">
+					<div class="section__bottom services__bottom">
 						<div class="service service__one">
 							<div class="icon"><img src="assets/img/design.svg" alt="" width="30px"></div>
 							<h3>UI/UX Design</h3>
@@ -116,14 +116,14 @@
 				</div>
 			</section>
 
-			<section class="projects gr-purple" id="work">
-				<div class="projects__content container">
-					<div class="projects__top">
+			<section class="projects gr-purple section" id="work">
+				<div class="section__content container">
+					<div class="section__top">
 						<h5 class="title clr-light">02</h5><hr class="hr-light"><h5 class="title clr-light">PROJECTS</h5>
 						<h2 class="clr-light">Here are some of our work.</h2>
 						<p class="description clr-light">Take a look at our work. We’ve worked with some great companies to help them build delightful interfaces.</p>					
 					</div>
-					<div class="projects__bottom">
+					<div class="section__bottom projects__bottom">
 						<div class="project service__one">
 							<div class="featured">
 								<button class="launch-project launch-project--light"><div class="arrow-right arrow-right--color"></div></button>
@@ -152,14 +152,14 @@
 				</div>
 			</section>
 
-			<section class="testimonials">
-				<div class="testimonials__content container">
-					<div class="testimonials__top">
+			<section class="testimonials section">
+				<div class="section__content container">
+					<div class="section__top">
 						<h5 class="title">03</h5><hr><h5 class="title">TESTIMONIALS</h5>
 						<h2>See what our clients say.</h2>
 						<p class="description">We help companies to build great experiences on web and mobile. We offer design, development &amp; marketing.</p>					
 					</div>
-					<div class="testimonials__bottom">
+					<div class="section__bottom testimonials__bottom">
 						<div class="testimonials__bottom__img">
 							<img src="assets/img/client1.png" alt="">
 						</div>
@@ -271,11 +271,6 @@
 			$('.alpha').addClass('in');
 			},1000)
 
-			$('#featured').on('click', function()
-			{
-			    $('#main').addClass('hidden');
-			    $('#nextpage').load('01_vs_study.html');
-			});
 		});
 
     </script>
