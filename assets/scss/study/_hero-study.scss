@@ -1,22 +1,86 @@
 .hero-study-bg {
 	position: absolute;
-	z-index: -1;
 	right: 0;
 	height: 100vh;
 	width: 100%;
 	overflow: hidden;
+	z-index: -1;
 	&:before {
 		content:"";
 		position: absolute;
-		background: $gr-purple;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $gr-white-grey;
 		z-index: 5;
-		opacity:0.2;
+		opacity:1;
 	}
 	@media #{$desktop} {
 		&:before {
 			position: absolute;
-			background: $gr-purple;
 			z-index: 5;
 		}
+	}
+}
+
+.case-brief {
+	display: flex;
+	z-index: 1;
+	width: 100%;
+	background: $color-light-0;
+	@include shadow();
+	overflow: hidden;
+	@media #{$desktop} {
+
+	}
+}
+
+.label {
+	color: $color-light-blue;
+	margin-bottom: 1.78em;
+	margin-top: 2.8125em
+}
+
+.left,
+.center,
+.right {
+	display: flex;
+	flex: 1;
+	padding: 0;
+	// border: 1px solid red;
+}
+.left {
+	padding-left: 3em;
+}
+.center {
+	flex: 3;
+}
+
+.right {
+	background: $color-purple-dark;
+	padding-left: 2em;
+}
+.detail {
+	h4 {
+		padding: 0em;
+		margin: 0;
+		margin-bottom: 1.16em;
+	}
+	ul {
+		display: flex;
+		padding: 0;
+		padding-top: 0em;
+		li {
+			display: inline;
+			padding: 0;
+			&:nth-child(1) {
+				margin-left: 0em;
+			}
+		}
+	}
+	a {
+		font-size: 1.5em;
+		color: $color-light-0;
 	}
 }

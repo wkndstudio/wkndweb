@@ -24,9 +24,10 @@
 
 /// Scroll Reveal
 window.sr = ScrollReveal();
+// sr.reveal('.container', { duration: 2000, scale: 1, distance: '30px' });
+sr.reveal('div', { duration: 2000, scale: 1, distance: '30px' });
 sr.reveal('header', { duration: 1500, scale: 1, distance: '30px' });
 sr.reveal('.hero', { duration: 3000, scale: 1, distance: '50px' });
-sr.reveal('.container', { duration: 2000, scale: 1, distance: '30px' });
 
 
 // interval and custom config passed to reveal 

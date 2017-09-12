@@ -5,6 +5,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<title>Vinyl Shop Case Study</title>
 	<link rel="stylesheet" href="css/style.css">
+    <!-- load and instantiate ScrollReveal first -->
+    <script src="assets/js/scrollreveal.min.js"></script> 
+    <script>
+      window.sr = ScrollReveal();
+ 
+      // Add class to <html> if ScrollReveal is supported 
+      // Note: this method is deprecated, and only works in version 3 
+      if (sr.isSupported()) {
+        document.documentElement.classList.add('sr');
+      }
+ 
+    </script> 
+ 
+    <style>
+ 
+      /* Ensure elements load hidden before ScrollReveal runs */
+      .sr .fooReveal { visibility: hidden; }
+ 
+    </style> 
 </head>
 <body>
 	<div class="main">
@@ -28,13 +47,13 @@
 
 
 			<section class="hero hero-study">
-				<div class="hero-study-bg" style="background: url(assets/img/padding-right: -3px;.png);"></div>
+				<div class="hero-study-bg" style="background: url(assets/img/pr3.png); background-size: contain; width: 100%; height: 100%; background-repeat: no-repeat;"></div>
 				<div class="hero__content container">
 					<div class="case-brief">
 						<div class="left">
 							<div class="content">
 								<div class="label">Client Name</div>
-								<div class="detail"><h3>Vinly Shop</h3></div>
+								<div class="detail"><h4>Vinly Shop</h4></div>
 							</div>
 						</div>
 						<div class="center">
@@ -43,13 +62,13 @@
 								<div class="detail">
 									<ul>
 										<li>
-											<h3>Web &amp; Branding</h3>
+											<h4>Web &amp; Branding</h4>
 										</li>
 										<li>
-											<h3>1 Month</h3>
+											<h4>1 Month</h4>
 										</li>
 										<li>
-											<h3>$2000</h3>
+											<h4>$2000</h4>
 										</li>
 									</ul>
 								</div>
@@ -68,25 +87,61 @@
 			<section class="services" id="services">
 				<div class="services__content container">
 				<div class="services__top">
-						<h5 class="title">01</h5><hr><h5 class="title">SERVICES</h5>
-						<h2>We can help you grow.</h2>
-						<p class="description">We help companies to build great experiences on web and mobile. We offer design, development &amp; marketing.</p>					
+						<h5 class="title">01</h5><hr><h5 class="title">Problem</h5>
+						<h2>Branding, Landing Page,<br/> &amp; E Commerce Design</h2>
+						<p class="description">Vinyl Shop is the biggest vinyl record reseller and decorative items. They needed to put up an E commerce website and a branding.</p>					
 					</div>
 					<div class="services__bottom">
-						<div class="service service__one">
-							<div class="icon"><img src="assets/img/design.svg" alt="" width="30px"></div>
-							<h3>UI/UX Design</h3>
-							<p>We desgin pixel perfect interfaces. Our process includes Research, Strategy, Implementation, Analysis &amp; Interation.</p>
+						<img src="assets/img/pr2.jpg" alt="">					
+					</div>
+				</div>
+			</section>
+
+			<section class="services" id="services">
+				<div class="services__content container">
+				<div class="services__top">
+						<h5 class="title">02</h5><hr><h5 class="title">Solution</h5>
+						<h2>Branding, Landing Page,<br/> &amp; E Commerce Design</h2>
+						<p class="description">Vinyl Shop is the biggest vinyl record reseller and decorative items. They needed to put up an E commerce website and a branding.</p>					
+					</div>
+					<div class="services__bottom">
+						<img src="assets/img/vs/img-1.png" alt="">					
+						<img src="assets/img/vs/img-2.png" alt="">									
+					</div>
+				</div>
+			</section>
+
+			<section class="projects" id="work">
+				<div class="projects__content container">
+					<div class="projects__top">
+						<h5 class="title">03</h5><hr class=""><h5 class="title">More Case Studies</h5>
+						<h2 class="">Check out more projects 🚀</h2>
+						<p class="description">Take a look at our work. We’ve worked with some great companies to help them build delightful interfaces.</p>					
+					</div>
+					<div class="projects__bottom">
+						<div class="project service__one">
+							<div class="featured">
+								<button class="launch-project launch-project--light"><div class="arrow-right"></div></button>
+								<div class="project-hero img-circle">
+									<img src="assets/img/pr1.png" alt="">
+								</div>
+							</div>
 						</div>
-						<div class="service service__two">
-							<div class="icon"><img src="assets/img/dev.svg" alt="" width="30px"></div>
-							<h3>Development</h3>
-							<p>We desgin pixel perfect interfaces. Our process includes Research, Strategy, Implementation, Analysis &amp; Interation.</p>
+						<div class="project service__two">
+							<div class="featured">
+								<button class="launch-project launch-project--light"><div class="arrow-right"></div></button>
+								<div class="project-hero img-circle">
+									<img src="assets/img/pr2.jpg" alt="">
+								</div>
+							</div>
 						</div>		
-						<div class="service service__three">
-							<div class="icon"><img src="assets/img/marketing.svg" alt="" width="30px"></div>
-							<h3>Marketing</h3>
-							<p>We desgin pixel perfect interfaces. Our process includes Research, Strategy, Implementation, Analysis &amp; Interation.</p>
+						<div class="project service__three">
+							<div class="featured">
+								<button class="launch-project launch-project--light"><div class="arrow-right"></div></button>
+								<div class="project-hero img-circle">
+									<img src="assets/img/pr3.png" alt="">
+								</div>
+							</div>
 						</div>						
 					</div>
 				</div>
@@ -158,13 +213,42 @@
 
 	</div>
 	<!-- SCRIPTS -->
-	
 	<script src="assets/js/jquery-2.1.1.js"></script>
 	<script src="assets/js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+	<!-- <script src="assets/js/owl.carousel.min.js"></script> --> <!-- Resource jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TimelineLite.min.js"></script>
 	<script src="assets/js/scripts.js"></script> <!-- Resource jQuery -->
 	<script src="https://unpkg.com/feather-icons"></script>
+
     <script>
-      feather.replace()
+		$(document).ready(function(){
+			console.log('Website Under Development ☺️ 🤑')
+			// $(".owl-carousel").owlCarousel({
+			//     items: 1,
+			//     singleItem: true,
+			//     itemsScaleUp : true,
+			//     slideSpeed: 500,
+			//     autoPlay: 5000,
+			//     autoplayHoverPause: true,
+			// 	loop:true,
+			// 	margin:0,
+			// 	navSpeed:500,
+			// 	nav:true,
+			// 	items:1
+			// });
+			feather.replace();
+			setTimeout(function() {
+			$('.alpha').addClass('in');
+			},1000)
+
+			$('#featured').on('click', function()
+			{
+			    $('#main').addClass('hidden');
+			    $('#nextpage').load('01_vs_study.html');
+			});
+		});
+
     </script>
 </body>
 </html>
