@@ -604,10 +604,12 @@ button {
   margin: 1em;
   margin-left: 0em;
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: all .3s ease; }
   button:hover {
     cursor: pointer;
-    box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.024); }
+    box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.024);
+    transition: all .3s ease; }
 
 a.button {
   font-family: "Poppins", sans-serif;
@@ -627,10 +629,12 @@ a.button {
 .cta-link {
   background: #00D6FF;
   padding: 1em 2em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: all .3s ease; }
   .cta-link:hover {
     background: #5200FF;
-    color: #fff; }
+    color: #fff;
+    transition: all .3s ease; }
 
 .contact_btn {
   font-size: 14px;
@@ -678,6 +682,19 @@ a.button {
       width: 5em;
       border: 6px solid #5200FF;
       bottom: 2em; } }
+
+.launch-project--inverse {
+  background: #5200FF;
+  height: 5em;
+  width: 5em;
+  border: 6px solid #fff;
+  bottom: 2em; }
+  .launch-project--inverse .arrow-right {
+    border-top: 0.8em solid transparent;
+    border-bottom: 0.8em solid transparent;
+    border-left: 1em solid #fff;
+    margin: 0 auto;
+    margin-left: -0.25em; }
 
 .arrow-right {
   width: 0;
@@ -788,7 +805,7 @@ a.button {
     left: 0;
     background: linear-gradient(56.63deg, #5200FF 49.28%, #BC90FF 145.44%);
     z-index: 5;
-    opacity: 0.2; }
+    opacity: 0.35; }
   @media (min-width: 1024px) {
     .hero-bg {
       display: block; } }
@@ -999,6 +1016,9 @@ section.hero {
 .services__bottom img {
   padding: 0; }
 
+.services__bottom p {
+  font-size: 0.875em; }
+
 .service {
   flex: 1; }
 
@@ -1134,7 +1154,9 @@ input {
   padding: 1.5em;
   margin: 1em;
   margin-left: 0em;
-  width: 100%; }
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  transition: all .3s ease; }
   textarea:nth-child(2),
   input:nth-child(2) {
     margin-right: 0em; }
@@ -1142,6 +1164,12 @@ input {
 textarea::placeholder,
 input::placeholder {
   color: #5282FF; }
+
+textarea:focus,
+input:focus {
+  background: rgba(255, 255, 255, 0) !important;
+  border-bottom: 1px solid #fff !important;
+  transition: all .3s ease; }
 
 .send-mark {
   position: absolute;
@@ -1465,24 +1493,21 @@ Parallax
   position: absolute;
   top: 20%;
   right: 0;
-  height: 80%;
+  height: 60%;
   width: 100%;
   overflow: hidden;
+  opacity: 0.8;
   z-index: -1; }
   .hero-study-bg:before {
     content: "";
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 80%;
+    height: 85%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 86.19%);
     z-index: 5;
     opacity: 1; }
-  @media (min-width: 1024px) {
-    .hero-study-bg:before {
-      position: absolute;
-      z-index: 5; } }
 
 .case-brief {
   display: flex;
@@ -1503,7 +1528,13 @@ Parallax
 .right {
   display: flex;
   flex: 1;
+  flex-direction: row;
   padding: 0; }
+  @media (min-width: 1024px) {
+    .left,
+    .center,
+    .right {
+      flex-direction: column; } }
 
 .left {
   padding-left: 3em; }

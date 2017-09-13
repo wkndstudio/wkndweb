@@ -8,9 +8,11 @@ button {
 	margin-left: 0em;
 	color: $color-light-0;
 	text-transform: uppercase;
+	transition: all .3s ease;
 	&:hover{
 		cursor: pointer;
 		@include shadow();
+		transition: all .3s ease;
 	}
 }
 
@@ -35,9 +37,11 @@ a.button {
     background: #00D6FF;
     padding: 1em 2em;
     text-transform: uppercase;
+    transition: all .3s ease;
     &:hover {
         background: $color-purple-dark;
         color: $color-light-0;
+        transition: all .3s ease;
     }
 }
 
@@ -92,6 +96,20 @@ a.button {
 	}
 }
 
+.launch-project--inverse {
+	background: $color-purple-dark;
+	height: 5em;
+	width: 5em;
+	border: 6px solid $color-light-0;
+	bottom: 2em;
+	.arrow-right {
+		border-top: 0.8em solid transparent;
+		border-bottom: 0.8em solid transparent;
+		border-left: 1em solid $color-light-0;
+		margin: 0 auto;
+		margin-left: -0.25em;
+	}
+}
 .arrow-right {
 	width: 0; 
 	height: 0; 

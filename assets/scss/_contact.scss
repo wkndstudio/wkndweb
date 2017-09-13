@@ -70,6 +70,8 @@ input {
 	margin: 1em;
 	margin-left: 0em;
 	width: 100%;
+	border-bottom: 1px solid rgba(0,0,0,0);
+	transition: all .3s ease;
 	&:nth-child(2){
 		margin-right: 0em;
 	}
@@ -78,6 +80,13 @@ input {
 textarea::placeholder,
 input::placeholder {
 	color: $color-light-blue;
+}
+
+textarea:focus,
+input:focus {
+	background: rgba(255, 255, 255, 0) !important;
+	border-bottom: 1px solid #fff !important;
+	transition: all .3s ease;
 }
 
 .send-mark {
