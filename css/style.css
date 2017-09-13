@@ -1269,6 +1269,9 @@ input:focus {
     width: 100%;
   }
 }*/
+div#preload {
+  display: none; }
+
 @keyframes rotateInLeft {
   from {
     transform-origin: 0% 0%;
