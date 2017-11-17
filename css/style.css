@@ -489,7 +489,7 @@ template {
   src: local("Larsseit Bold"), url("../assets/fonts/Larsseit-Bold.woff") format("woff"); }
 
 body {
-  font-family: "Larsseit", "Poppins", sans-serif;
+  font-family: "Larsseit", -apple-system, BlinkMacSystemFont, "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #fff;
@@ -621,7 +621,7 @@ hr {
         color: #00D6FF; } }
 
 button {
-  font-family: "Larsseit", "Poppins", sans-serif;
+  font-family: "Larsseit", -apple-system, BlinkMacSystemFont, "Poppins", sans-serif;
   font-size: 14px;
   background: #5200FF;
   border-radius: 0;
@@ -637,7 +637,7 @@ button {
     transition: all .3s ease; }
 
 a.button {
-  font-family: "Larsseit", "Poppins", sans-serif;
+  font-family: "Larsseit", -apple-system, BlinkMacSystemFont, "Poppins", sans-serif;
   font-size: 14px;
   background: #5200FF;
   border-radius: 0;
@@ -691,6 +691,16 @@ a.button {
       width: 8em;
       border: 10px solid #fff;
       bottom: 2em; } }
+  .launch-project--red {
+    background: #F7535C !important; }
+  .launch-project--purple {
+    background: #5200FF !important; }
+  .launch-project--blue {
+    background: #238DFE !important; }
+  .launch-project--green {
+    background: #5200FF !important; }
+  .launch-project--yellow {
+    background: #F2C94C !important; }
 
 .launch-project--light {
   position: absolute;
@@ -720,6 +730,9 @@ a.button {
     border-left: 1em solid #fff;
     margin: 0 auto;
     margin-left: -0.25em; }
+
+.launch-project--red {
+  background: #F7535C; }
 
 .arrow-right {
   width: 0;

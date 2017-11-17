@@ -77,6 +77,21 @@ a.button {
 		border: 10px solid $color-light-0;
 		bottom: 2em;
 	}
+	&--red {
+		background: #F7535C !important;
+	}
+	&--purple {
+		background: #5200FF !important;
+	}
+	&--blue {
+		background: #238DFE !important;
+	}
+	&--green {
+		background: #5200FF !important;
+	}
+	&--yellow {
+		background: #F2C94C !important;
+	}
 }
 
 .launch-project--light {
@@ -110,6 +125,13 @@ a.button {
 		margin-left: -0.25em;
 	}
 }
+
+.launch-project--red {
+	background: #F7535C;
+}
+
+
+
 .arrow-right {
 	width: 0; 
 	height: 0; 
