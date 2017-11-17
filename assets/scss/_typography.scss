@@ -1,6 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
+
+//Fonts 
+
+@font-face {
+font-family: 'Larsseit';
+font-style: normal;
+font-weight: normal;
+src: local('Larsseit'), url('../assets/fonts/Larsseit.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Larsseit Light';
+font-style: normal;
+font-weight: normal;
+src: local('Larsseit Light'), url('../assets/fonts/Larsseit-Light.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Larsseit Medium';
+font-style: normal;
+font-weight: normal;
+src: local('Larsseit Medium'), url('../assets/fonts/Larsseit-Medium.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Larsseit Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Larsseit Bold'), url('../assets/fonts/Larsseit-Bold.woff') format('woff');
+}
+
+
 body {
     font-family: $font-family-0;
     -webkit-font-smoothing: antialiased;
@@ -14,7 +46,7 @@ p {
     line-height: 1.8;
     margin: 0;
     margin-bottom: 1em;
-    font-family: 'Poppins';
+    font-family: 'Larsseit';
     letter-spacing: 0.8px;
     color: $color-body-copy;
     max-width: 90%;
@@ -31,6 +63,7 @@ h2,
 h3,
 h4,
 h5 {
+    font-family: 'Larsseit Medium';
     color: $color-heading;
     font-weight: normal;
 }
