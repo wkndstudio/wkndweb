@@ -8,284 +8,38 @@
 <!-- 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
 	<link rel="stylesheet" href="css/style.css">
-    <!-- load and instantiate ScrollReveal first -->
-    <script src="assets/js/scrollreveal.min.js"></script> 
-    <script>
-      window.sr = ScrollReveal();
  
-      // Add class to <html> if ScrollReveal is supported 
-      // Note: this method is deprecated, and only works in version 3 
-      if (sr.isSupported()) {
-        document.documentElement.classList.add('sr');
-      }
- 
-    </script> 
- 
-    <style>
- 
-      /* Ensure elements load hidden before ScrollReveal runs */
-      .sr .fooReveal { visibility: hidden; }
- 
-    </style> 
 </head>
 <body>
 
-<!-- 	<div class="loader">
-		<div class="sentance">
-		  <div class="sentance__half left">
-		    <span class="inner">
-		      Loading Your
-		    </span>
-		  </div>
-		  <div class="sentance__half right">
-		    <span class="inner">
-		      Experience
-		    </span>
-		    <span class="dot"></span>
-		  </div>
-		</div>
-	</div> -->
-	<div class="page" id="nextpage"></div>
-	<div class="main" id="main">
-	
-			<header class="header">
-				<div class="header__content container">
-					<div class="header__left">
-						<img src="#" alt="">
-						<a href="/"><h3>Weekend.</h3></a>
-					</div>
-					<div class="header__right">
-						<ul class="header-links">
-							<li><a class="nav-link" href="#services">Services</a></li>
-							<li><a class="nav-link" href="#work">Work</a></li>
-							<li><a class="nav-link" href="https://dribbble.com/wknd">Dribbble</a></li>
-							<li><a class="nav-link cta-link" href="#contact">Get a Quote</a></li>
-						</ul>
-					</div>
-				</div>
-			</header>
-
-
-			<section class="hero">
-				<div class="hero-bg" style="background: url(assets/img/hero-bg.png);"></div>
-				<div class="hero__content container">
-					<div class="hero__left">
-						<h5 class="title clr-blue">WEB/MOBILE/APPLICATIONS</h5>
-						<h1>We’re a design &amp; <br/>development agency.</h1>
-						<p>We help companies to build great experiences on web and mobile. We offer design, development &amp; marketing.</p>
-						<div class="hero__left__links">
-							<a class="nav-link cta-link" href="#contact">Start A Project</a>
-							<a href="#work">Check Our Projects</a>
-						</div>				
-					</div>
-					<div class="hero__right">
-						<div class="featured">
-							<button class="launch-project" id="featured" type="button" onclick="window.location.href='/stick-redesign.html'"><div class="arrow-right"></div></button>
-							<div class="project-hero img-main">
-								<img src="assets/img/stick/preview.png" alt="">
+	<main>
+			<nav>
+					<div class="container">
+						<div class="flex-row-justify">
+							<div class="left">
+								wknd.
+							</div>
+							<div class="right">
+								<a href="#">madeby<span>wknd.</span></a>
 							</div>
 						</div>
-						<div class="nav-hero"></div>				
-					</div>					
+					</div>
+				</nav>
+		<header>
+			<div class="container">
+					<h1>
+							From scribbles on a napkin to fully functional digital products. We do it all. <span>We design and develop delightful products for the web. </span>
+					</h1>
+			</div>
+		</header>
+		<footer>
+			<div class="container">
+				<div class="flex-col-start">
+					<div class="label">Enquiry:</div>
+					<div class="contact">hello@wknd.design</div>
 				</div>
-			</section>
-
-			<section class="services section" id="services">
-				<div class="section__content container">
-				<div class="section__top">
-						<h5 class="title">01</h5><hr><h5 class="title">SERVICES</h5>
-						<h2>We can help you grow.</h2>
-						<p class="description">We help companies to build great experiences on web and mobile. We offer design, development &amp; marketing.</p>					
-					</div>
-					<div class="section__bottom services__bottom">
-						<div class="service service__one">
-							<div class="icon"><img src="assets/img/design.svg" alt="" width="30px"></div>
-							<h3>UI/UX Design</h3>
-							<p>We design pixel perfect interfaces. Our process includes Research, Strategy, Implementation, Analysis & Interation.</p>
-						</div>
-						<div class="service service__two">
-							<div class="icon"><img src="assets/img/dev.svg" alt="" width="30px"></div>
-							<h3>Development</h3>
-							<p>From Web to Mobile Apps we develop great experiences with the help of latest technology.</p>
-						</div>		
-						<div class="service service__three">
-							<div class="icon"><img src="assets/img/marketing.svg" alt="" width="30px"></div>
-							<h3>Marketing</h3>
-							<p>We help brands to grow beyond just social media. With our marketing we can help you scale your brands to be memorable.</p>
-						</div>						
-					</div>
-				</div>
-			</section>
-
-			<section class="projects gr-purple section" id="work">
-				<div class="section__content container">
-					<div class="section__top">
-						<h5 class="title clr-light">02</h5><hr class="hr-light"><h5 class="title clr-light">PROJECTS</h5>
-						<h2 class="clr-light">Here are some of our work.</h2>
-						<p class="description clr-light">Take a look at our work. We’ve worked with some great companies to help them build delightful interfaces.</p>					
-					</div>
-					<div class="section__bottom projects__bottom">
-						<div class="project service__one">
-							<div class="featured">
-								<button class="launch-project launch-project--light"><div class="arrow-right arrow-right--color"></div></button>
-								<div class="project-hero img-circle">
-									<img src="assets/img/pr1.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="project service__two">
-							<div class="featured">
-								<button class="launch-project launch-project--light"><div class="arrow-right arrow-right--color"></div></button>
-								<div class="project-hero img-circle">
-									<img src="assets/img/pr2.jpg" alt="">
-								</div>
-							</div>
-						</div>		
-						<div class="project service__three">
-							<div class="featured">
-								<button class="launch-project launch-project--light"><div class="arrow-right arrow-right--color"></div></button>
-								<div class="project-hero img-circle">
-									<img src="assets/img/pr3.png" alt="">
-								</div>
-							</div>
-						</div>						
-					</div>
-				</div>
-			</section>
-
-			<section class="testimonials section">
-				<div class="section__content container">
-					<div class="section__top">
-						<h5 class="title">03</h5><hr><h5 class="title">TESTIMONIALS</h5>
-						<h2>See what our clients say.</h2>
-						<p class="description">We help companies to build great experiences on web and mobile. We offer design, development &amp; marketing.</p>					
-					</div>
-					<div class="section__bottom testimonials__bottom">
-						<div class="testimonials__bottom__img">
-							<img src="assets/img/client1.png" alt="">
-						</div>
-						<div class="testimonials__bottom__testimonial service__one">
-							<div class="quote-mark"><img src="assets/img/quote.svg" alt=""></div>
-							<div class="testimonials__bottom__testimonial__content">
-								<h4 class="clr-light">Michael Kott</h4>
-								<p class="desc clr-light">One of the best in terms of quality, communication and responsiveness. Will certainly work with them again.</p>
-								<h5 class="clr-light">Co-Founder, Burnalong</h4>								
-							</div>
-						</div>						
-					</div>
-				</div>
-			</section>
-
-			<section class="contact clr-bg-blue section" id="contact">
-<!-- 				<div class="send-mark"><img src="assets/img/quote.svg" alt=""></div> -->
-				<div class="contact__content container">
-					<div class="contact__left">
-						<div class="contact__left__top">
-							<h2 class="clr-light">Have a project in mind?</h2>
-							<p class="description clr-light">If you have a query you can write to us - 007@wknd.design or if you have an urgent query let us know - 911@wknd.design.</p>							
-						</div>	
-						<div class="contact__left__bottom">				
-							<p class="description clr-light">DRIBBBLE : WWW.DRIBBBLE.COM/WKND</p>
-							<p class="description clr-light">MAIL : 911@WKND.DESIGN</p>
-						</div>
-					</div>
-					<div class="contact__right">
-						<h2 class="clr-light">Contact Us</h2>
-						<form action="https://formspree.io/911@wknd.design" method="POST">
-							<div class="contact__right__details">
-								<input type="text" name="name" placeholder="Full Name">
-								<input type="text" name="email" placeholder="Email Address">								
-							</div>
-							<textarea name="message" id="" cols="30" rows="5" placeholder="Job Description"></textarea>
-							<button class="contact_btn">Send us a message</button>
-						</form>					
-					</div>
-				</div>
-			</section>
-
-			<footer class="footer" id="footer">
-				<div class="footer__content container">
-					<div class="footer__top">
-						<h1 class="clr-grey">Wknd.</h1>
-					</div>
-					<div class="footer__bottom">
-						<div class="footer__bottom__col">
-							<h5 class="clr-grey">Stay in touch</h5>
-							<ul>
-								<li><a href="">Twitter</a></li>
-								<li><a href="">Facebbok</a></li>
-								<li><a href="">Dribbble</a></li>
-								<li><a href="">Behance</a></li>
-							</ul>
-						</div>
-						<div class="footer__bottom__col">
-							<h5 class="clr-grey">Email Us</h5>
-							<ul>
-								<li><a href="">911@wknd.design</a></li>
-								<li><a href="">work@wknd.design</a></li>
-							</ul>
-						</div>
-						<div class="footer__bottom__col">
-							<h5 class="clr-grey">Follow</h5>
-							<ul>
-								<li>Facebook</li>
-								<li>Twitter</li>
-							</ul>
-						</div>
-						<div class="footer__bottom__col">
-							<h5 class="clr-grey">Copyright</h5>
-							<h6>© WKND Digital Pvt. Ltd.</h6>
-						</div>						
-					</div>
-				</div>
-			</footer> 
-
-	</div>
-	<!--====================================
-	=            Preload Images            =
-	=====================================-->
-	
-	<div id="preload">
-	   <img src="assets/img/hero-bg.png" width="1" height="1" alt="Image 01" />
-	   <img src="assets/img/burnalong/img-1.png" width="1" height="1" alt="Image 01" />
-	   <img src="assets/img/pr3.png" width="1" height="1" alt="Image 01" />
-	   <img src="assets/img/vinylshop/img-1.png" width="1" height="1" alt="Image 01" />
-	   <img src="assets/img/yapixit/img-1.png" width="1" height="1" alt="Image 01" />
-	   <img src="assets/img/client1.png" width="1" height="1" alt="Image 01" />
-	</div>
-	<!-- SCRIPTS -->
-	
-	<script src="assets/js/jquery-2.1.1.js"></script>
-	<script src="assets/js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
-	<!-- <script src="assets/js/owl.carousel.min.js"></script> --> <!-- Resource jQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TimelineLite.min.js"></script>
-	<script src="assets/js/scripts.js"></script> <!-- Resource jQuery -->
-	<script src="https://unpkg.com/feather-icons"></script>
-
-    <script>
-		$(document).ready(function(){
-			console.log('Website Under Development ☺️ 🤑')
-			// $(".owl-carousel").owlCarousel({
-			//     items: 1,
-			//     singleItem: true,
-			//     itemsScaleUp : true,
-			//     slideSpeed: 500,
-			//     autoPlay: 5000,
-			//     autoplayHoverPause: true,
-			// 	loop:true,
-			// 	margin:0,
-			// 	navSpeed:500,
-			// 	nav:true,
-			// 	items:1
-			// });
-			feather.replace();
-			setTimeout(function() {
-			$('.alpha').addClass('in');
-			},1000)
-
-		});
-
-    </script>
+			</div>
+		</footer>
+	</main>
 </body>
 </html>
