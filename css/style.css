@@ -530,7 +530,13 @@ h1 {
   font-size: 3em;
   margin: 0;
   margin-bottom: 1.25rem;
-  color: #383838; }
+  color: #383838;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 62px;
+  line-height: 74px;
+  letter-spacing: -0.0025em;
+  color: #FFF; }
 
 h2 {
   font-weight: normal;
@@ -1618,52 +1624,29 @@ Parallax
     height: 100%;
     padding-bottom: 2em; }
 
-html,
-body {
-  width: auto;
-  height: auto; }
+html, body {
+  background: linear-gradient(180deg, #13111C 0%, #0D0711 100%);
+  height: 100%;
+  width: 100%;
+  font-family: ITC Avant Garde Gothic Std;
+  color: white; }
 
-hr {
-  border: none;
-  border-bottom: 1px solid #2A407A;
-  margin: 0 1em;
-  padding: 0; }
+.logo {
+  position: fixed;
+  left: 0px;
+  top: 60px; }
 
-hr.hr-light {
-  border-bottom: 1px solid #fff; }
-
-* {
-  box-sizing: border-box; }
-
-button {
-  outline: 0;
-  border: 0; }
-  html, body {
-    background: linear-gradient(180deg, #13111C 0%, #0D0711 100%);
-    height: 100%;
-    width: 100%;
-    font-family: ITC Avant Garde Gothic Std;
-    color: white;
-  }
-  
-  .logo {
-    position: fixed;
-    left: 0px;
-    top: 60px;
-  }
-  
-  .preloader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
   .preloader .pretext, .preloader .text {
     position: absolute;
     bottom: 250px;
@@ -1677,8 +1660,7 @@ button {
     font-feature-settings: 'pnum' on, 'onum' on;
     margin-left: -40px;
     color: #FFFEFF;
-    opacity: 0.25;
-  }
+    opacity: 0.25; }
   .preloader .text {
     margin-left: 0px;
     bottom: 100px;
@@ -1692,6 +1674,7 @@ button {
     text-transform: lowercase;
     font-feature-settings: 'pnum' on, 'onum' on;
     opacity: 1;
-    color: #FFFEFF;
-  }
-  
+    color: #FFFEFF; }
+
+.body-container {
+  width: 100%; }

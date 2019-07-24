@@ -1,0 +1,18 @@
+nav {
+	position: absolute;
+	background: none;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	padding: 30px 0;
+}
+
+.nav {
+	&__links {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.brand {
+		max-width: 100px;
+	}
+}

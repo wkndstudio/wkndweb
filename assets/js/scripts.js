@@ -79,3 +79,28 @@ $('a[href*="#"]')
 
 // interval and custom config passed to reveal 
 // sr.reveal('section', { duration: 2000 }, 1000);
+
+
+function test() {
+ let pretext = ['we bring', 'we love making ', 'we are the music to your', 'we are the music to your'];
+ let text = ['magic.', 'things.', 'mixtape.', 'mixtape.'];
+ let maxIndex = (pretext.length - 1);
+ let cIndex = 0;
+
+ setInterval(function() {
+  if (cIndex == maxIndex)
+      cIndex = 0;
+
+      $("#pretext").fadeIn(800);
+      $('#pretext').text(pretext[cIndex]);
+      $("#text").delay(200).fadeIn(1200);
+      $('#text').text(text[cIndex]);
+
+      $("#pretext").fadeOut(1200);
+      $("#text").fadeOut(1600);
+  cIndex++;
+}, 5000);
+
+}
+
+test();
