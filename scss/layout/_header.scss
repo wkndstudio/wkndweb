@@ -1,0 +1,12 @@
+header {
+    width: 100%;
+
+    .header {
+        &__content {
+            min-height: 80vh;
+            padding-top: 340px;
+            h1 {
+            }
+        }
+    }
+}

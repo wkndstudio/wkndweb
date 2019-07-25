@@ -23,19 +23,19 @@
 // }
 
 /// Scroll Reveal
-window.sr = ScrollReveal();
+// window.sr = ScrollReveal();
 
-var sections = document.getElementsByClassName('anim');
+// var sections = document.getElementsByClassName('anim');
 
-function divreveal() {
-	sr.reveal('div', { container: sections, duration: 2000, scale: 1, distance: '30px' });
-	// sr.reveal('div', { container: footer, duration: 2000, scale: 1, distance: '30px' });
-	// ds.reveal('div', { duration: 2000, scale: 1, distance: '30px' });
-}
-        sr.reveal('header', { duration: 2000, scale: 1, distance: '30px' });
-        sr.reveal('.hero', { duration: 2000, scale: 1, distance: '50px' });
-        		// divreveal();
-    	sr.reveal('.section div', { container: sections, duration: 2000, scale: 1, distance: '30px' });
+// function divreveal() {
+// 	sr.reveal('div', { container: sections, duration: 2000, scale: 1, distance: '30px' });
+// 	// sr.reveal('div', { container: footer, duration: 2000, scale: 1, distance: '30px' });
+// 	// ds.reveal('div', { duration: 2000, scale: 1, distance: '30px' });
+// }
+//         sr.reveal('header', { duration: 2000, scale: 1, distance: '30px' });
+//         sr.reveal('.hero', { duration: 2000, scale: 1, distance: '50px' });
+//         		// divreveal();
+//     	sr.reveal('.section div', { container: sections, duration: 2000, scale: 1, distance: '30px' });
 
 
 //Smooth Scroll & Remove irrevelant links

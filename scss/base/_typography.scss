@@ -74,6 +74,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: $header-line-height;
     font-weight: 400;
     text-align: left;
+    a {
+        all: inherit;
+        cursor: pointer;
+        display: inline;
+        text-decoration: underline;
+    }
 }
 
 h1 {
@@ -117,39 +123,30 @@ h1 {
 
 h2 {
     font-style: normal;
-    font-weight: normal;
-    font-size: 34px;
-    line-height: 40px;
-    /* or 118% */
-    text-align: center;
-    letter-spacing: -1.5px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 78%;
+    /* or 63px */
+    letter-spacing: -0.06em;
+    font-feature-settings: 'pnum' on, 'onum' on;
     
-    color: #FFFFFF;
+    color: #FEFEFE;
     @include respond-to('medium'){
 
-        font-style: normal;
-        font-weight: normal;
-        font-size: 34px;
-        line-height: 40px;
-        /* or 118% */
-        text-align: center;
-        letter-spacing: -1.5px;
-        
-        color: #FFFFFF;
+        font-size: 81px;
+        line-height: 78%;
 
     }
 }
 
 h3 {
-    font-size: $header-size / 1.5;
     font-style: normal;
     font-weight: 500;
-    line-height: rem(34px);
-    font-size: rem(24px);
-    font-weight: bold;
-    line-height: normal;
-    font-size: 16px;
-    color: #000000;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.0025em;
+    
+    color: #FAFAFA;
 }
 
 h4 {
@@ -165,13 +162,15 @@ h4 {
 }
 
 h5 {
-    font-size: $header-size / 1.8;
     font-style: normal;
-    font-weight: 300;
-    line-height: rem(22px);
-    font-size: rem(16px);
-    text-align: center;
-    letter-spacing: 0.01em;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 78%;
+    /* identical to box height, or 19px */
+    letter-spacing: -0.05em;
+    font-feature-settings: 'pnum' on, 'onum' on;
+    
+    color: #FEFEFE;
 }
 
 h6 {
@@ -198,6 +197,7 @@ p {
     font-size: 14px;
     color: #404040;
     max-width: 350px;
+    text-align: left;
     &:first-of-type {
         margin-top: 0;
     }

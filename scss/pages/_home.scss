@@ -16,6 +16,7 @@ body {
 
 html, body {
     background: linear-gradient(180deg, #13111C 0%, #0D0711 100%);
+    background: #070707;
     height: 100%;
     width: 100%;
     font-family: ITC Avant Garde Gothic Std;
@@ -75,3 +76,128 @@ html, body {
       width: 100%;
       
   }
+ 
+  .section {
+	  padding: 120px 0;
+	  position: relative;
+	  .content__header {
+		padding: 20px 0 90px;
+	  }
+	  &__label {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 38px;
+		line-height: 78%;
+		/* identical to box height, or 30px */
+		letter-spacing: -0.05em;
+		text-transform: lowercase;
+		font-feature-settings: 'pnum' on, 'onum' on;
+		
+		color: #FFFEFF;
+		
+		opacity: 0.1;
+		transform: rotate(-90deg);
+		position: absolute;
+		white-space: nowrap;
+		top: 300%;
+		right: 110%;
+
+	  }
+	  &--work {
+		  .work {
+			  margin-bottom: 60px;
+			  h5, p {
+				  text-align: left;
+				  color: white;
+				  margin: 0;
+			  }
+			  h5 {
+				  text-transform: uppercase;
+				  margin-top: 24px;
+				  margin-bottom: 16px;
+			  }
+			  p {
+				  margin-bottom: 32px;
+			  }
+		  }
+	  }
+	  &--services {
+		  h3 {
+			  color: white;
+		  }
+		ul {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			li {
+				margin: 0;
+				padding: 0;
+				padding: 60px 0;
+				h2 {
+					text-align: left;
+				}
+				p {
+					font-family: Graphik;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 24px;
+					line-height: 78%;
+					/* or 19px */
+					letter-spacing: -0.06em;
+					font-feature-settings: 'pnum' on, 'onum' on;
+					text-align: left;
+					color: #FEFEFE;
+					max-width: 100%;
+					opacity: 0.5;
+				}
+			}
+		}
+	  }
+	  &--shots {
+		  padding-bottom: 0;
+	  }
+  }
+
+  .grid {
+	padding: 100px 40px;
+	user-select: none;
+ }
+ 
+ .photo {
+
+ }
+
+ 
+ /* Non-grid specific CSS */  
+
+ .grid-item {
+	max-width: 100%;
+	padding: 20px;
+	@include respond-to('medium') {
+		max-width: 31.5%;
+	}
+	@include respond-to('large') {
+		max-width: 23.5%;
+	}
+	@include respond-to('huge') {
+		max-width: 23.5%;
+	}
+	@include respond-to('x-huge') {
+		max-width: 23.5%;
+	}
+	@include respond-to('xx-huge') {
+		max-width: 23.5%;
+	}
+	@include respond-to('xxx-huge') {
+		max-width: 23.5%;
+	}
+ }
+ 
+ .photothumb{
+	width: 100%;
+    object-fit: cover !important;
+    height: auto;
+ }
