@@ -1245,11 +1245,21 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    width: 100%;
+    user-select: none; }
     .section--services ul li {
       margin: 0;
       padding: 0;
-      padding: 60px 0; }
+      padding: 60px 0;
+      width: 100%; }
+      .section--services ul li .list-container {
+        max-width: 840px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start; }
       .section--services ul li h2 {
         text-align: left; }
       .section--services ul li p {
@@ -1265,6 +1275,19 @@ html, body {
         color: #FEFEFE;
         max-width: 100%;
         opacity: 0.5; }
+    .section--services ul .service-item:hover {
+      background: white; }
+    .section--services ul .service-item--dev:hover {
+      background: #FF4E00; }
+    .section--services ul .service-item--pd:hover {
+      background: #05FF00;
+      background: #8FFF00; }
+      .section--services ul .service-item--pd:hover p {
+        opacity: 0.75; }
+    .section--services ul .service-item--brand:hover {
+      background: #0047FF; }
+    .section--services ul .service-item--magic:hover {
+      background: #FF005C; }
   .section--shots {
     padding-bottom: 0; }
 

@@ -136,10 +136,21 @@ html, body {
 			flex-direction: column;
 			align-items: flex-start;
 			justify-content: flex-start;
+			width: 100%;
+			user-select: none;
 			li {
 				margin: 0;
 				padding: 0;
 				padding: 60px 0;
+				width: 100%;
+				.list-container {
+					max-width: 840px;
+					margin: 0 auto;
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					justify-content: flex-start;
+				}
 				h2 {
 					text-align: left;
 				}
@@ -157,6 +168,36 @@ html, body {
 					max-width: 100%;
 					opacity: 0.5;
 				}
+			}
+			.service-item {
+				&:hover {
+					background: white;
+				}
+				&--dev {
+					&:hover {
+						background: #FF4E00;
+					}
+				}
+				&--pd {
+					&:hover {
+						background: #05FF00;
+						background: #8FFF00;
+						p {
+							opacity: 0.75;
+						}
+					}
+				}
+				&--brand {
+					&:hover {
+						background: #0047FF;
+					}
+				}
+				&--magic {
+					&:hover {
+						background: #FF005C;
+					}
+				}
+				
 			}
 		}
 	  }
