@@ -79,6 +79,11 @@ $('a[href*="#"]')
 
 // interval and custom config passed to reveal 
 // sr.reveal('section', { duration: 2000 }, 1000);
+$( "li.service-item--pd" ).hover(
+  function() {
+    $('selector').css({'cursor': 'url(https://source.unsplash.com/random/128x128), default'});
+  }
+);
 
 
 function test() {
