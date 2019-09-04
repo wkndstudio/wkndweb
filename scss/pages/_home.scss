@@ -13,7 +13,14 @@ body {
 	overflow-x: hidden;
 	width: 100%;
 }
-
+.container-fluid {
+	padding-right: 10px;
+	padding-left: 10px;
+	@include respond-to('medium') {
+		padding-right: 2rem;
+		padding-left: 2rem;
+	}
+}
 html, body {
     background: linear-gradient(180deg, #13111C 0%, #0D0711 100%);
 	background: #070707;
@@ -83,29 +90,56 @@ html, body {
 	 padding: 10px;
 	 background: white;
 	 display: flex;
-	 flex-direction: row;
-	 margin-bottom: 140px;
-
+	 flex-direction: column;
+	 margin-bottom: 60px;
+	@include respond-to('medium') {
+		flex-direction: row;
+		margin-bottom: 140px;
+	}
 	 h2 {
 		font-style: normal;
 		font-weight: bold;
-		font-size: 32px;
-		line-height: 32px;
+		font-size: 72px;
+		padding-top: 16px;
+		line-height: 72px;
 		/* or 100% */
 		letter-spacing: -0.06em;
 		font-feature-settings: 'pnum' on, 'onum' on;
 		
 		color: #000000;
+		@include respond-to('medium') {
+			padding-top: 0px;
+			width: 25%;
+			margin-right: 5%;
+		}
 	 }
 	 .cs-testimonial {
 		 background: #0C0C0C;
 		 padding: 20px;
+		 display: none;
+		 &--mobile {
+			 display: block;
+			 margin-top: 40px;
+			 img {
+				 margin-bottom: 0 !important;
+			 }
+		 }
+		 @include respond-to('medium') {
+			 display: block;
+			 &--mobile {
+				display: none;
+			}
+		 }
 		 .profile {
 			 display: flex;
 			 flex-direction: row;
 			 align-items: center;
 			 .avatar {
 				 margin-right: 8px;
+				 width: 48px;
+				 height: 48px;
+				 border-radius: 48px;
+				 overflow: hidden;
 			 }
 		 }
 		 .meta {
@@ -114,6 +148,9 @@ html, body {
 			 align-items: left;
 			 justify-content: flex-start;
 			 align-items: flex-start;
+			 .avatar {
+
+			 }
 			 .name {
 				font-style: normal;
 				font-weight: bold;
@@ -138,11 +175,16 @@ html, body {
 		 }
 	 }
 	 .cs-info {
-		 width: 25%;
-		 margin-right: 5%;
+		 width: 100%;
 		 display: flex;
 		 flex-direction: column;
 		 justify-content: space-between;
+
+		 @include respond-to('medium') {
+			width: 25%;
+			margin-right: 5%;
+		}
+		
 	 }
 	 .cs-services {
 		 display: flex;
@@ -151,7 +193,7 @@ html, body {
 		 h6 {
 			font-style: normal;
 			font-weight: bold;
-			font-size: 18px;
+			font-size: 14px;
 			line-height: 152%;
 			/* or 27px */
 			letter-spacing: -0.03em;
@@ -168,13 +210,27 @@ html, body {
 			width: 90%;
 			letter-spacing: -0.02em;
 			font-feature-settings: 'pnum' on, 'onum' on;
-			
+			display: none;
 			color: #000000;
+		 }
+		 @include respond-to('medium') {
+			 h6 {
+				 font-size: 18px;
+			 }
+			 p {
+				display: block;
+			 }
 		 }
 	 }
 	 .cs-image {
-		width: 70%;
-		
+		width: 100%;
+		padding-top: 20px;
+		margin: -20px 0;
+		@include respond-to('medium') {
+			padding-top: 0px;
+			width: 70%;
+			margin: 0;
+		}
 		img {
 			box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.05);
 			width: 100%;
@@ -247,15 +303,21 @@ color: #000000;
   }
   
   .section {
-	  padding: 120px 0;
+	  padding: 40px 0;
 	  position: relative;
 
 	  .content__header {
-		padding: 20px 0 90px;
+		padding: 20px 0 0px;
 		h3 {
 			max-width: 600px;
 		}
 	  }
+	  @include respond-to('medium') {
+		padding: 120px 0;
+		.content__header {
+			padding: 20px 0 90px;
+		  }
+	}
 	  &__label {
 		font-style: normal;
 		font-weight: bold;
@@ -269,10 +331,13 @@ color: #000000;
 		color: #FFFEFF;
 		
 		opacity: 0.1;
-		transform: rotate(-90deg);
-		position: absolute;
-		white-space: nowrap;
 
+
+		white-space: nowrap;
+		@include respond-to('medium') {
+			transform: rotate(-90deg);
+			position: absolute;
+		}
 	  }
 	  &--work {
 		  .work {
@@ -293,6 +358,10 @@ color: #000000;
 		  }
 	  }
 	  &--services {
+		  padding: 0 10px;
+		  @include respond-to('medium') {
+			  padding: 160px 0;
+		  }
 		  h3 {
 			  color: white;
 		  }
@@ -305,10 +374,11 @@ color: #000000;
 			justify-content: flex-start;
 			width: 100%;
 			user-select: none;
+
 			li {
 				margin: 0;
 				padding: 0;
-				padding: 60px 0;
+				padding: 30px 0;
 				width: 100%;
 				.list-container {
 					max-width: 840px;
@@ -325,8 +395,8 @@ color: #000000;
 					font-family: Graphik;
 					font-style: normal;
 					font-weight: 500;
-					font-size: 24px;
-					line-height: 78%;
+					font-size: 20px;
+					line-height: 128%;
 					/* or 19px */
 					letter-spacing: -0.06em;
 					font-feature-settings: 'pnum' on, 'onum' on;
@@ -336,15 +406,24 @@ color: #000000;
 					opacity: 0.5;
 				}
 			}
+			@include respond-to('medium') {
+				padding: 0;
+				li {
+					padding: 60px 0;
+					p {
+						font-size: 24px;
+						line-height: 78%;
+					}
+				}
+			}
 			.service-item {
+				z-index: 2;
 				&:hover {
 					background: white;
 				}
 				&--dev {
 					&:hover {
 						background: #FF4E00;
-
-cursor: url('https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif' ), auto;
 					}
 				}
 				&--pd {
@@ -352,7 +431,7 @@ cursor: url('https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif' ), auto;
 						background: #05FF00;
 						background: #8FFF00;
 						background: #4ED966;
-cursor: url('https://media.giphy.com/media/kF5H49pxNWp67W0GWH/giphy-downsized.gif '), auto;
+
 						p {
 							opacity: 0.75;
 						}
@@ -361,17 +440,14 @@ cursor: url('https://media.giphy.com/media/kF5H49pxNWp67W0GWH/giphy-downsized.gi
 				&--brand {
 					&:hover {
 						background: #0047FF;
-
-						cursor: url('https://source.unsplash.com/128x128/?branding ' ), auto;
 					}
 				}
 				&--magic {
 					&:hover {
 						background: #FF005C;
-						cursor: url('https://source.unsplash.com/128x128/?magic'), auto;
+
 					}
 				}
-				
 			}
 		}
 	  }
@@ -384,7 +460,7 @@ cursor: url('https://media.giphy.com/media/kF5H49pxNWp67W0GWH/giphy-downsized.gi
 			 bottom: 520px;
 			  height: 40px;
 			  width: 199px;
-			  z-index: 20;
+			  z-index: 1;
 			  color: #49454C;
 			  left: 100px;
 			  opacity: 1;
@@ -393,8 +469,11 @@ cursor: url('https://media.giphy.com/media/kF5H49pxNWp67W0GWH/giphy-downsized.gi
   }
 
   .grid {
-	padding: 100px 40px;
+	padding: 50px 0px;
 	user-select: none;
+	@include respond-to('medium') {
+		padding: 100px 40px;
+	}
  }
  
  .photo {
@@ -452,8 +531,8 @@ cursor: url('https://media.giphy.com/media/kF5H49pxNWp67W0GWH/giphy-downsized.gi
 			 flex-direction: row;
 			 justify-content: space-between;
 			 width:100%;
-			padding: 48px 0;
-			padding-right: 100px;
+			padding: 24px 0;
+			padding-right: 20px;
 			background: #0D0711;
 			border-top: 1px solid #49444C;
 			.content {
@@ -474,8 +553,8 @@ color: #FEFEFE;
 			 p {
 				font-style: normal;
 				font-weight: 500;
-				font-size: 24px;
-				line-height: 78%;
+				font-size: 20px;
+				line-height: 128%;
 				/* or 19px */
 				letter-spacing: -0.06em;
 				font-feature-settings: 'pnum' on, 'onum' on;
@@ -486,13 +565,27 @@ color: #FEFEFE;
 				opacity: 0.5;
 			 }
 		 }
+		 @include respond-to('medium') {
+			 a {
+				 padding: 48px 0;
+				 padding-right: 100px;
+			 }
+			 .content p {
+				font-size: 24px;
+				line-height: 78%;
+			 }
+		 }
 	 }
  }
  .section--work{
 	 display: flex;
 	 justify-content: flex-end;
 	ul {
-		width: 75%;
+		width: 100%;
+		padding: 0 10px;
+		@include respond-to('medium'){
+			width: 75%;
+		}
 	}
  }
 

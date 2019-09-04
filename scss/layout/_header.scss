@@ -1,15 +1,16 @@
 header {
     width: 100%;
-
+    padding: 0 10px;
     .header {
         &__content {
-            min-height: 80vh;
-            padding-top: 340px;
+            min-height: 70vh;
+            padding-top: 275px;
             h1 {
             }
         }
     }
     .header__logos {
+        margin-bottom: 80px;
         .type-label {
             margin-bottom: 40px;
             opacity: 0.5;

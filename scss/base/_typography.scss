@@ -110,8 +110,8 @@ h1 {
     margin-bottom: 1.25rem;
     font-style: normal;
     font-weight: 500;
-    font-size: 48px;
-    line-height: 52px;
+    font-size: 28px;
+    line-height: 32px;
     letter-spacing: -0.0025em;
     color: #FFF;
     @include respond-to('medium'){
@@ -141,11 +141,15 @@ h2 {
 h3 {
     font-style: normal;
     font-weight: 500;
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 32px;
+    line-height: 36px;
     letter-spacing: -0.0025em;
-    
+    padding-left: 20px;
     color: #FAFAFA;
+    @include respond-to('medium') {
+        font-size: 48px;
+        line-height: 58px;
+    }
 }
 
 h4 {
